@@ -1,0 +1,12 @@
+listen: :${PORT}
+protocol: udp
+auth:
+  type: password
+  password: "${PASSWORD}"
+obfs:
+  type: salamander
+  salamander:
+    password: "${OBFS}"
+bandwidth:
+  up: 100 mbps
+  down: 300 mbps
